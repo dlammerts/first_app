@@ -7,6 +7,11 @@ gem 'rails', '4.1.0'
 group :development do
   gem 'sqlite3'
 end
+# Added PostgreSQL gem used by Heroku for production environment
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
